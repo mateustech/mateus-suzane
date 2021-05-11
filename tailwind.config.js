@@ -5,10 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#800000",
+        primary: "#60001c",
       },
       fontFamily: {
-        primary: ['Great Vibes'],
+        primary: ['Just Another Hand'],
+        secondary: ['Cookie'],
       },
     },
     

@@ -32,11 +32,13 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
+import {useRouter} from "next/router";
 
 
 function SwipeableTextMobileStepper() {
-
+  const router = useRouter()
   const handleNext = () => {
+    router.push("/step3")
   };
 
   const handleBack = () => {

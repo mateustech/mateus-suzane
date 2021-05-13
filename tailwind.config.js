@@ -8,8 +8,9 @@ module.exports = {
         primary: "#60001c",
       },
       fontFamily: {
-        primary: ['Just Another Hand'],
+        primary: ['Great Vibes'],
         secondary: ['Cookie'],
+        terciary: ['Great Vibes'],
       },
     },
     

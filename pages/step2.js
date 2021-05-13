@@ -32,20 +32,17 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
-import {useRouter} from "next/router";
-
+import { useRouter } from "next/router";
 
 function SwipeableTextMobileStepper() {
-  const router = useRouter()
+  const router = useRouter();
   const handleNext = () => {
-    router.push("/step3")
+    router.push("/step3");
   };
 
-  const handleBack = () => {
-  };
+  const handleBack = () => {};
 
-  const handleStepChange = (step) => {
-  };
+  const handleStepChange = (step) => {};
 
   return (
     <div>
@@ -69,28 +66,26 @@ function SwipeableTextMobileStepper() {
       </Head>
 
       <main className="flex flex-col w-screen h-screen items-center justify-between">
-        <div>
+        <div></div>
+
+        <div className="flex items-center justify-center">
+          <main className="flex flex-col  items-center justify-center">
+            <h1 className="text-2xl font-secondary text-gray-700 text-center">
+              Vocês foram escolhidos entre tantos<br/>porque queremos que
+              <h1 className="font-secondary font-medium text-primary">
+                estejam Sempre ao nosso lado</h1>
+              de uma maneira especial. <br/>O grande dia esta chegando,<br/>desejamos que
+              aproveite cada momento
+              <h1 className="font-secondary text-primary">e se divirta bastante!</h1>
+            </h1>
+          </main>
         </div>
-      
-            <div
-              className="flex items-center justify-center"
-            >
-              <main className="flex flex-col  items-center justify-center">
-                <h1 className="text-xl font-secondary text-primary text-center">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint deleniti reiciendis, dicta nobis, consectetur tempora maxime, fugiat commodi voluptate exercitationem tempore. Beatae magni et atque impedit quod consequatur temporibus quibusdam.
-                </h1>
-             
-              </main>
-            </div>
-        <div className="flex w-full items-center justify-between px-10 py-4">
-          <Button size="small" onClick={handleBack} >
+        <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
+          <Button size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar
           </Button>
-          <Button
-            size="small"
-            onClick={handleNext}
-          >
+          <Button size="small" onClick={handleNext}>
             Próximo
             <KeyboardArrowRight />
           </Button>

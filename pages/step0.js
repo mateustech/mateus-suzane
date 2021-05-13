@@ -49,16 +49,16 @@ function SwipeableTextMobileStepper() {
               className="flex items-center justify-center"
           >
             <main className="flex flex-col  items-center justify-center">
-              <h1 className="text-4xl font-secondary text-gray-800">
+              <h1 className="text-4xl font-secondary text-gray-700">
                 {" "}
                 Ola, temos um convite
               </h1>
-              <h1 className="font-primary text-primary text-8xl">
+              <h1 className="font-secondary text-primary text-6xl">
                 Para vocês!
               </h1>
             </main>
           </div>
-          <div className="flex w-full items-center justify-between px-10 py-4">
+          <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
             <Button size="small" onClick={handleBack} >
               <KeyboardArrowLeft />
               Voltar

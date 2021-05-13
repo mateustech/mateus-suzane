@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from 'next/router'
+import Swal from 'sweetalert2'
 
 import React from "react";
 import Button from "@material-ui/core/Button";
@@ -21,7 +22,26 @@ function SwipeableTextMobileStepper() {
 
   const handleStepChange = (step) => {
   };
-
+  const handleNot = () => {
+    Swal.fire({
+      title: 'Opss!',
+      text: 'Não aceitamos um não!',
+      imageUrl: 'https://images6.fanpop.com/image/photos/40700000/Minions-despicable-me-minions-40777765-320-320.gif',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+    })
+  }
+  const handleYes = () => {
+    Swal.fire({
+      title: 'Aeeeee!',
+      text: 'Vamos ao manual dos padrinhos?',
+      imageUrl: 'https://cdn2.scratch.mit.edu/get_image/gallery/27445514_170x100.png',
+      imageWidth: 600,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+    })
+  }
   return (
     <div>
       <Head>
@@ -51,11 +71,11 @@ function SwipeableTextMobileStepper() {
               className="flex flex-col items-center justify-center"
             >
               <main className="flex flex-col  items-center justify-center">
-                <h1 className="text-4xl font-secondary text-gray-800">
+                <h1 className="text-4xl font-secondary text-gray-700">
                   {" "}
                   Aceita ser nossos
                 </h1>
-                <h1 className="font-primary text-primary text-8xl">
+                <h1 className="font-secondary text-primary text-6xl">
                   Padrinhos?
                 </h1>
               </main>
@@ -65,6 +85,7 @@ function SwipeableTextMobileStepper() {
                     size="small"
                     color="secondary"
                     aria-label="add"
+                    onClick={() => handleNot()}
                 >
                   <SentimentVeryDissatisfiedIcon  />
                   NÃO!
@@ -74,6 +95,7 @@ function SwipeableTextMobileStepper() {
                     size="small"
                     color="primary"
                     aria-label="add"
+                    onClick={() => handleYes()}
                 >
                   <SentimentVerySatisfiedIcon  />
                   SIMMM

@@ -40,6 +40,8 @@ function SwipeableTextMobileStepper() {
       imageWidth: 600,
       imageHeight: 200,
       imageAlt: 'Custom image',
+    }).then(result => {
+      router.push("/step4")
     })
   }
   return (

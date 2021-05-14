@@ -15,10 +15,12 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 function SwipeableTextMobileStepper() {
   const router = useRouter();
   const handleNext = () => {
-    router.push("/step2");
+    router.push("/step5");
   };
 
-  const handleBack = () => {};
+  const handleBack = () => {
+    router.push("/step3");
+  };
 
   const handleStepChange = (step) => {};
   const handleNot = () => {
@@ -116,7 +118,10 @@ function SwipeableTextMobileStepper() {
                     } font-bold`}
                   >
                     {item === 26 ? (
-                      <FavoriteIcon fontSize="large" className="absolute top-1 text-primary  z-10" />
+                      <FavoriteIcon
+                        fontSize="large"
+                        className="absolute top-1 text-primary  z-10"
+                      />
                     ) : null}
 
                     <span className="relative z-10">{item}</span>
@@ -125,13 +130,20 @@ function SwipeableTextMobileStepper() {
               })}
             </ul>
           </main>
-          <div className="flex w-full mt-20 items-center justify-between border-b border-primary border-opacity-50">
-            <h1 className="font-primary text-primary text-4xl">
-              26 de Junho de 2021
-            </h1>
+          <h1 className="font-primary text-primary mt-14 text-4xl">
+            26 de Junho de 2021
+          </h1>
+          <div className="flex pt-14 border-t border-primary border-opacity-50 w-full items-center justify-between py-4 pb-20">
+            <Button size="small" onClick={handleBack}>
+              <KeyboardArrowLeft />
+              Voltar
+            </Button>
+            <Button size="small" onClick={handleNext}>
+              Próximo
+              <KeyboardArrowRight />
+            </Button>
           </div>
         </div>
-        <div className="flex w-full items-center justify-between px-10 py-4"></div>
       </main>
     </div>
   );

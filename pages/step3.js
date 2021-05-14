@@ -14,10 +14,11 @@ import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissa
 function SwipeableTextMobileStepper() {
   const router = useRouter()
   const handleNext = () => {
-    router.push("/step2")
+    router.push("/step3")
   };
 
   const handleBack = () => {
+    router.push("/step2");
   };
 
   const handleStepChange = (step) => {

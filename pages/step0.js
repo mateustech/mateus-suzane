@@ -53,7 +53,7 @@ function SwipeableTextMobileStepper() {
                 {" "}
                 Ola, temos um convite
               </h1>
-              <h1 className="font-secondary text-primary text-6xl">
+              <h1 className="font-secondary text-primary text-4xl">
                 Para vocês!
               </h1>
             </main>

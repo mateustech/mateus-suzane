@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Swal from "sweetalert2";
@@ -15,11 +16,11 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 function SwipeableTextMobileStepper() {
   const router = useRouter();
   const handleNext = () => {
-    router.push("/step6");
+    router.push("/step7");
   };
 
   const handleBack = () => {
-    router.push("/step4");
+    router.push("/step5");
   };
 
   const handleStepChange = (step) => {};
@@ -67,11 +68,10 @@ function SwipeableTextMobileStepper() {
       </Head>
 
       <main className="flex flex-col px-4  w-screen h-screen items-center justify-center py-10">
-        <h1 className="text-primary font-primary text-4xl">Querida Madrinha</h1>
+        <h1 className="text-primary font-primary text-4xl">Querido Padrinho</h1>
         <h1 className="text-center mt-4  text-gray-700">
-          Escolhemos a cor <b className="text-primary italic">vinho</b> com
-          muito carinho para o nosso grande dia, e temos certeza de que você
-          ficará linda usando um vestido longo em um dos seguintes tons.
+          Pedimos que use um terno escuro com camisa branca. E que tal combinar
+          a cor da gravata com a cor do vestido da madrinha?
         </h1>
         <div className="flex flex-col w-full relative items-center justify-start ">
           <ul className="flex w-full items-center justify-center mt-4">
@@ -85,12 +85,12 @@ function SwipeableTextMobileStepper() {
             })}
           </ul>
           <div className="flex w-full mt-4 items-start justify-evenly">
-          <h1 className="font-primary text-4xl">Inspire-se</h1>
             <img
               className="w-32 h-32 rounded-full mt-4"
-              src="recorte.jpeg"
+              src="padrinhos.jpeg"
               alt=""
             />
+            <h1 className="font-primary text-4xl">Inspire-se</h1>
           </div>
         </div>
         <div className="flex w-full items-center justify-between mt-10 px-10 py-4">

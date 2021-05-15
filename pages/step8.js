@@ -14,12 +14,9 @@ import FilterVintageIcon from "@material-ui/icons/FilterVintage";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 function SwipeableTextMobileStepper() {
   const router = useRouter();
-  const handleNext = () => {
-    router.push("/step6");
-  };
-
+ 
   const handleBack = () => {
-    router.push("/step4");
+    router.push("/step7");
   };
 
   const handleStepChange = (step) => {};
@@ -67,40 +64,14 @@ function SwipeableTextMobileStepper() {
       </Head>
 
       <main className="flex flex-col px-4  w-screen h-screen items-center justify-center py-10">
-        <h1 className="text-primary font-primary text-4xl">Querida Madrinha</h1>
-        <h1 className="text-center mt-4  text-gray-700">
-          Escolhemos a cor <b className="text-primary italic">vinho</b> com
-          muito carinho para o nosso grande dia, e temos certeza de que você
-          ficará linda usando um vestido longo em um dos seguintes tons.
-        </h1>
-        <div className="flex flex-col w-full relative items-center justify-start ">
-          <ul className="flex w-full items-center justify-center mt-4">
-            {["#6f1d34", "#921a3e", "#6f1d34", "#60001c"].map((item) => {
-              return (
-                <li
-                  style={{ backgroundColor: item }}
-                  className="w-14 h-14 rounded-full m-1"
-                ></li>
-              );
-            })}
-          </ul>
-          <div className="flex w-full mt-4 items-start justify-evenly">
-          <h1 className="font-primary text-4xl">Inspire-se</h1>
-            <img
-              className="w-32 h-32 rounded-full mt-4"
-              src="recorte.jpeg"
-              alt=""
-            />
-          </div>
-        </div>
+        <h1 className="text-primary font-semibold text-xl">Obrigado por chegar ate aqui!</h1>
+        <h1 className="text-primary font-semibold">Ate breve...</h1>
+        <h1 className="text-gray-800 mt-10 font-primary text-4xl">Suzana e Mateus</h1>
+
         <div className="flex w-full items-center justify-between mt-10 px-10 py-4">
           <Button size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar
-          </Button>
-          <Button size="small" onClick={handleNext}>
-            Próximo
-            <KeyboardArrowRight />
           </Button>
         </div>
       </main>

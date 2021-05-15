@@ -14,7 +14,7 @@ import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissa
 function SwipeableTextMobileStepper() {
   const router = useRouter()
   const handleNext = () => {
-    router.push("/step3")
+    router.push("/step4")
   };
 
   const handleBack = () => {

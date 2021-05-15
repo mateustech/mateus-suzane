@@ -40,7 +40,9 @@ function SwipeableTextMobileStepper() {
     router.push("/step3");
   };
 
-  const handleBack = () => {};
+  const handleBack = () => {
+
+  };
 
   const handleStepChange = (step) => {};
 
@@ -81,7 +83,7 @@ function SwipeableTextMobileStepper() {
           </main>
         </div>
         <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
-          <Button size="small" onClick={handleBack}>
+          <Button disabled size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar
           </Button>

@@ -13,9 +13,6 @@ const Home = (props) => {
     router.push("/step2");
   };
 
-  const handleBack = () => {};
-
-  const handleStepChange = (step) => {};
 
   return (
     <div>
@@ -57,11 +54,8 @@ const Home = (props) => {
             </h1>
           </main>
         </div>
-        <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
-          <Button size="small" onClick={handleBack}>
-            <KeyboardArrowLeft />
-            Voltar
-          </Button>
+        <div className="flex w-full items-center justify-end px-10 py-4 pb-20">
+         
           <Button size="small" onClick={handleNext}>
             Próximo
             <KeyboardArrowRight />

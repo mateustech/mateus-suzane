@@ -40,8 +40,8 @@ const Home = (props) => {
 
         {/*<img className="w-20" src="https://static.vecteezy.com/system/resources/previews/001/187/250/non_2x/hearts-paint-png.png" alt=""/>*/}
         <div className="flex items-center justify-center">
-          <main className="flex flex-col  items-center justify-center">
-            <h1 className="text-4xl text-center font-secondary text-gray-700">
+          <main className="flex flex-col text-4xl font-secondary  items-center justify-center">
+            <h1 className=" text-center text-gray-700">
               {" "}
               Ola{" "}
               <h1 className="text-primary">
@@ -49,13 +49,13 @@ const Home = (props) => {
               </h1>{" "}
               temos um convite
             </h1>
-            <h1 className="font-secondary text-primary text-4xl">
+            <h1 className="text-primary">
               Para vocês!
             </h1>
           </main>
         </div>
-        <div className="flex w-full items-center justify-end px-10 py-4 pb-20">
-         
+        <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
+         <div></div>
           <Button size="small" onClick={handleNext}>
             Próximo
             <KeyboardArrowRight />

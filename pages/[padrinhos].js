@@ -22,40 +22,27 @@ const Home = (props) => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-          rel="stylesheet"
-        />
-        <link
           href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
           rel="stylesheet"
         />
       </Head>
 
-      <main className="flex flex-col w-screen h-screen items-center justify-between">
-        <div></div>
+      <main className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-center">
+     
 
-        {/*<img className="w-20" src="https://static.vecteezy.com/system/resources/previews/001/187/250/non_2x/hearts-paint-png.png" alt=""/>*/}
-        <div className="flex items-center justify-center">
-          <main className="flex flex-col text-4xl font-secondary  items-center justify-center">
+        <aside className="flex flex-col text-4xl font-primary items-center justify-center">
             <h1 className=" text-center text-gray-700">
-              {" "}
-              Ola{" "}
+              Ola
               <h1 className="text-primary">
                 {props.p && props.m ? props.p + " e " + props.m : null},
-              </h1>{" "}
+              </h1>
               temos um convite
-            </h1>
-            <h1 className="text-primary">
+              <h1 className="text-primary">
               Para vocês!
             </h1>
-          </main>
-        </div>
-        <div className="flex w-full items-center justify-between px-10 py-4 pb-20">
-         <div></div>
+            </h1>
+          </aside>
+        <div className="flex w-full absolute bottom-0 bg-gray-200 items-center justify-end px-10 py-4 pb-20">
           <Button size="small" onClick={handleNext}>
             Próximo
             <KeyboardArrowRight />
@@ -65,11 +52,7 @@ const Home = (props) => {
     </div>
   );
 };
-// export async function getStaticProps(context) {
-//   return {
-//     props: {}, // will be passed to the page component as props
-//   }
-// }
+
 export async function getStaticPaths() {
   return {
     paths: [

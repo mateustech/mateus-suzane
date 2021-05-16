@@ -66,7 +66,7 @@ function SwipeableTextMobileStepper() {
         />
       </Head>
 
-      <main className="flex flex-col px-4  w-screen h-screen items-center justify-center py-10">
+      <main className="flex px-4 lg:px-40 bg-gray-200 flex-col w-screen h-screen items-center justify-center">
         <h1 className="text-primary font-primary text-4xl">Importante!</h1>
         <ul className="flex flex-col w-full items-start justify-center mt-4">
           <li className="flex items-start px-4 py-4">
@@ -89,8 +89,8 @@ function SwipeableTextMobileStepper() {
             </span>
           </li>
         </ul>
-        <div className="flex w-full items-center justify-between mt-10 px-10 py-4">
-          <Button size="small" onClick={handleBack}>
+        <div className="flex w-full items-center justify-between absolute bottom-0 px-10 py-4 pb-20">
+           <Button size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar
           </Button>

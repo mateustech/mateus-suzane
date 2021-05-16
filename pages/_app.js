@@ -2,9 +2,9 @@ import 'tailwindcss/tailwind.css'
 import {MaterialThemeProvider} from '../MaterialThemeProvider'
 function MyApp({ Component, pageProps }) {
   return (
-      <MaterialThemeProvider>
+      // <MaterialThemeProvider>
         <Component {...pageProps} />
-      </MaterialThemeProvider>
+      // </MaterialThemeProvider>
   )
 }
 

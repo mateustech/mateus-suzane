@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Swal from "sweetalert2";
@@ -23,29 +22,6 @@ function SwipeableTextMobileStepper() {
     router.push("/step5");
   };
 
-  const handleStepChange = (step) => {};
-  const handleNot = () => {
-    Swal.fire({
-      title: "Opss!",
-      text: "Não aceitamos um não!",
-      imageUrl:
-        "https://images6.fanpop.com/image/photos/40700000/Minions-despicable-me-minions-40777765-320-320.gif",
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: "Custom image",
-    });
-  };
-  const handleYes = () => {
-    Swal.fire({
-      title: "Aeeeee!",
-      text: "Vamos ao manual dos padrinhos?",
-      imageUrl:
-        "https://cdn2.scratch.mit.edu/get_image/gallery/27445514_170x100.png",
-      imageWidth: 600,
-      imageHeight: 200,
-      imageAlt: "Custom image",
-    });
-  };
   return (
     <div>
       <Head>
@@ -67,11 +43,11 @@ function SwipeableTextMobileStepper() {
         />
       </Head>
 
-      <main className="flex flex-col px-4  w-screen h-screen items-center justify-center py-10">
+      <main className="flex bg-gray-200 px-4 flex-col w-screen h-screen items-center justify-center">
         <h1 className="text-primary font-primary text-4xl">Querido Padrinho</h1>
         <h1 className="text-center mt-4  text-gray-700">
-          Pedimos que use um terno escuro com camisa branca. E que tal combinar
-          a cor da gravata com a cor do vestido da madrinha?
+          Pedimos que use calsa escura com camisa branca. E que tal combinar a
+          cor da gravata com a cor do vestido da madrinha?
         </h1>
         <div className="flex flex-col w-full relative items-center justify-start ">
           <ul className="flex w-full items-center justify-center mt-4">
@@ -93,7 +69,7 @@ function SwipeableTextMobileStepper() {
             <h1 className="font-primary text-4xl">Inspire-se</h1>
           </div>
         </div>
-        <div className="flex w-full items-center justify-between mt-10 px-10 py-4">
+        <div className="flex w-full items-center justify-between absolute bottom-0 px-10 py-4 pb-20">
           <Button size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar

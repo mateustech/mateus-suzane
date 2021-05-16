@@ -14,34 +14,11 @@ import FilterVintageIcon from "@material-ui/icons/FilterVintage";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 function SwipeableTextMobileStepper() {
   const router = useRouter();
- 
+
   const handleBack = () => {
     router.push("/step7");
   };
 
-  const handleStepChange = (step) => {};
-  const handleNot = () => {
-    Swal.fire({
-      title: "Opss!",
-      text: "Não aceitamos um não!",
-      imageUrl:
-        "https://images6.fanpop.com/image/photos/40700000/Minions-despicable-me-minions-40777765-320-320.gif",
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: "Custom image",
-    });
-  };
-  const handleYes = () => {
-    Swal.fire({
-      title: "Aeeeee!",
-      text: "Vamos ao manual dos padrinhos?",
-      imageUrl:
-        "https://cdn2.scratch.mit.edu/get_image/gallery/27445514_170x100.png",
-      imageWidth: 600,
-      imageHeight: 200,
-      imageAlt: "Custom image",
-    });
-  };
   return (
     <div>
       <Head>
@@ -63,12 +40,16 @@ function SwipeableTextMobileStepper() {
         />
       </Head>
 
-      <main className="flex flex-col px-4  w-screen h-screen items-center justify-center py-10">
-        <h1 className="text-primary font-semibold text-xl">Obrigado por chegar ate aqui!</h1>
-        <h1 className="text-primary font-semibold">Ate breve...</h1>
-        <h1 className="text-gray-800 mt-10 font-primary text-4xl">Suzana e Mateus</h1>
+      <main className="flex lg:px-40 bg-gray-200 flex-col w-screen h-screen items-center justify-center">
+        <h1 className="text-gray-600 font-semibold text-xl">
+          Obrigado por chegar ate aqui!
+        </h1>
+        <h1 className="text-gray-600 font-semibold">Ate breve...</h1>
+        <h1 className="text-primary mt-10 font-primary text-4xl">
+          Suzana e Mateus
+        </h1>
 
-        <div className="flex w-full items-center justify-between mt-10 px-10 py-4">
+        <div className="flex w-full items-center justify-start absolute bottom-0 px-10 py-4 pb-20">
           <Button size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar

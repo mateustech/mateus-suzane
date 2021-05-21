@@ -44,7 +44,7 @@ function SwipeableTextMobileStepper() {
           <aside className="flex flex-col items-center justify-center pt-4 lg:pt-20">
             <aside className="px-14">
               <div className="flex items-center justify-center p-2 bg-white rounded">
-                <img className="rounded" src="noivos.jpeg"/>
+                <img className="rounded w-60" src="noivos.jpeg"/>
               </div>
             </aside>
             <h1 className="text-primary mt-4 font-primary text-4xl">

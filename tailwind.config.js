@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     colors: {
       primary: "#60001c",
+      white: "#fff",
     },
     fontFamily: {
       primary: ['Cookie']

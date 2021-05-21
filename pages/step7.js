@@ -73,7 +73,7 @@ function SwipeableTextMobileStepper() {
               <li className="flex items-start px-4 py-4">
                 <FavoriteIcon className="text-primary" />
                 <span className="text-gray-700 ml-2">
-              Cheguem com 30 minutos de antecedência no local da cerimonia. Não
+              Cheguem com 30 minutos de antecedência no local da cerimônia. Não
               podemos nos atrazar;
             </span>
               </li>
@@ -86,7 +86,7 @@ function SwipeableTextMobileStepper() {
               <li className="flex items-start px-4 py-4">
                 <FavoriteIcon className="text-primary" />
                 <span className="text-gray-700 ml-2">
-              Divirtam-se, esse dia será inexquecivel em nossas vidas, e ficamos felizes em poder compartilhar com vocês ao nosso lado!
+              Divirtam-se, esse dia será inesquecível em nossas vidas, e ficamos felizes em poder compartilhar com vocês ao nosso lado!
             </span>
               </li>
             </ul>

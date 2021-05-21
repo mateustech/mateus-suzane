@@ -65,7 +65,7 @@ function SwipeableTextMobileStepper() {
             <h1 className="font-medium text-primary">
               estejam Sempre ao nosso lado
             </h1>
-            de uma maneira especial. <br />O grande dia esta chegando,
+            de uma maneira especial. <br />O grande dia está chegando,
             <br />
             desejamos que aproveite cada momento
             <h1 className="text-primary">

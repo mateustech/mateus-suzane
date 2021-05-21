@@ -41,10 +41,6 @@ function SwipeableTextMobileStepper() {
         </Head>
         
         <main className="flex flex-col w-screen h-screen items-center justify-between">
-          <div>
-          </div>
-          
-          {/*<img className="w-20" src="https://static.vecteezy.com/system/resources/previews/001/187/250/non_2x/hearts-paint-png.png" alt=""/>*/}
           <div
               className="flex items-center justify-center"
           >

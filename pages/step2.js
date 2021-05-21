@@ -56,8 +56,8 @@ function SwipeableTextMobileStepper() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-center">
-        <aside className="flex flex-col items-center justify-center">
+      <main className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-between">
+        <aside className="flex flex-col items-center justify-center pt-10 lg:pt-20">
           <h1 className="text-2xl font-primary text-gray-700 text-center">
             Vocês foram escolhidos entre tantos
             <br />
@@ -73,7 +73,7 @@ function SwipeableTextMobileStepper() {
             </h1>
           </h1>
         </aside>
-        <div className="flex w-full items-center justify-between absolute bottom-0 px-10 py-4 pb-20">
+        <div className="flex w-full items-center justify-between absolute bottom-0 p-6">
           <Button disabled size="small" onClick={handleBack}>
             <KeyboardArrowLeft />
             Voltar

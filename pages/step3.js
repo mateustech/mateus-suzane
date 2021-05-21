@@ -77,8 +77,8 @@ function SwipeableTextMobileStepper() {
           <div 
           className="px-4 py-1 m-1 cursor-pointer shadow-xl flex items-center rounded-full bg-primary "
           onClick={() => handleYes()}>
-            <SentimentVerySatisfiedIcon className="text-white" />
-            <span className="ml-1 text-white font-bold">Claroo!</span>
+            <SentimentVerySatisfiedIcon className="text-white" style={{color: "#fff"}} />
+            <span className="ml-1 text-white font-bold" style={{color: "#fff"}} >Claroo!</span>
           </div>
         </div>
       </main>

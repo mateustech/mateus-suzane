@@ -45,8 +45,8 @@ function SwipeableTextMobileStepper() {
         />
       </Head>
 
-      <aside className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-center">
-        <div className="flex flex-col  items-center justify-center">
+      <aside className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-between">
+        <div className="flex flex-col  items-center justify-center pt-10">
           <h1 className="font-primary text-primary text-4xl">
             Salve esta data!
           </h1>
@@ -105,12 +105,13 @@ function SwipeableTextMobileStepper() {
               );
             })}
           </ul>
+          <h1 className="font-primary border-b border-primary text-primary mt-4 text-3xl">
+            26 de Junho de 2021
+          </h1>
         </div>
-        <h1 className="font-primary border-b border-primary text-primary mt-4 text-3xl">
-          26 de Junho de 2021
-        </h1>
+
       </aside>
-      <div className="flex w-full items-center justify-between absolute bottom-0 px-10 py-4 pb-20">
+      <div className="flex w-full items-center justify-between absolute bottom-0 p-6 lg:pt-20">
         <Button size="small" onClick={handleBack}>
           <KeyboardArrowLeft />
           Voltar

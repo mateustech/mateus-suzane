@@ -27,10 +27,10 @@ const Home = (props) => {
         />
       </Head>
 
-      <main className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-center">
+      <main className="flex bg-gray-200 flex-col w-screen h-screen items-center justify-between">
      
 
-        <aside className="flex flex-col text-4xl font-primary items-center justify-center">
+        <aside className="flex flex-col text-4xl font-primary items-center justify-center pt-10 lg:pt-20">
             <h1 className=" text-center text-gray-700">
               Ola
               <h1 className="text-primary">
@@ -42,7 +42,7 @@ const Home = (props) => {
             </h1>
             </h1>
           </aside>
-        <div className="flex w-full absolute bottom-0 bg-gray-200 items-center justify-end px-10 py-4 pb-20">
+        <div className="flex w-full absolute bottom-0 bg-gray-200 items-center justify-end p-6">
           <Button size="small" onClick={handleNext}>
             Próximo
             <KeyboardArrowRight />
